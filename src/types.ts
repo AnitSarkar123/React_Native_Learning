@@ -14,7 +14,7 @@
 
 export type Product = {
   id: number;
-  image: string | null;
+  image: string;
   name: string;
   price: number;
 };
