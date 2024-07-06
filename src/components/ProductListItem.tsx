@@ -8,15 +8,16 @@ import { Product } from "@/src/types";
 //const product = products[1];
 import { Image } from "react-native";
 import { Link } from "expo-router";
-const defaultPizzaimage =
-  "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/food/peperoni.png";
+export const defaultPizzaImage =
+  "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/food/default.png";
 type ProductListItemProps = {
   product: Product;
 };
 const ProductListItem = ({ product }: ProductListItemProps) => {
   //NOTE: without asChild the styles of all divs are broken
+
   return (
-    <Link href={`/${product.id}`} asChild>
+    <Link href={`/menu/${product.id}`} asChild>
       <Pressable style={styles.container}>
         <Image
           style={styles.image}
