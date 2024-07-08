@@ -21,7 +21,7 @@ const ProductListItem = ({ product }: ProductListItemProps) => {
       <Pressable style={styles.container}>
         <Image
           style={styles.image}
-          source={{ uri: product.image || defaultPizzaimage }}
+          source={{ uri: product.image || defaultPizzaImage }}
           resizeMode="contain"
         />
         <Text style={styles.title}> {product.name}</Text>
